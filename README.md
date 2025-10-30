@@ -1,12 +1,8 @@
-Oke 👍 berikut versi **README.md** dengan **deskripsi yang lebih panjang dan lebih lengkap**, biar terlihat profesional dan memenuhi kriteria tugas kuliah juga 👇
-
----
-
 # ⚽ BARCA PLAYER CRUD – Sistem Manajemen Pemain Barcelona
 
-## 📋 Deskripsi Singkat
+## 📋 Deskripsi Singkat Mengenai Projek
 
-**BARCA PLAYER CRUD** adalah sebuah aplikasi web berbasis **PHP dan MySQL** yang dirancang untuk membantu pengguna dalam mengelola data pemain klub sepak bola **FC Barcelona** secara efisien.
+**BARCA PLAYER CRUD** adalah sebuah Projek web berbasis **PHP dan MySQL** yang dirancang untuk membantu pengguna dalam mengelola data pemain klub sepak bola **FC Barcelona** secara efisien.
 Aplikasi ini dibuat sebagai bagian dari **tugas Web A24**, dengan mengimplementasikan konsep dasar **CRUD (Create, Read, Update, Delete)** dalam pengembangan aplikasi web dinamis.
 
 Proyek ini tidak hanya menampilkan data pemain, tetapi juga memungkinkan pengguna untuk menambah, mengedit, menghapus, serta melihat detail informasi pemain secara interaktif.
@@ -39,8 +35,6 @@ Tujuan akhirnya adalah agar mahasiswa dapat menguasai dasar-dasar pengelolaan da
 | Web Server     | Apache (Laragon / XAMPP) |
 | Browser        | Chrome / Edge terbaru    |
 | Sistem Operasi | Windows 10/11            |
-
----
 
 ## ⚙️ Cara Instalasi dan Konfigurasi
 
@@ -84,7 +78,7 @@ Tujuan akhirnya adalah agar mahasiswa dapat menguasai dasar-dasar pengelolaan da
    $pass = '';
    ```
 
-5. **Jalankan Server**
+5. **Menjalankan Server**
 
    * Aktifkan **Apache** dan **MySQL** di Laragon atau XAMPP.
    * Buka browser dan akses:
@@ -136,19 +130,19 @@ try {
 
 ## 🖼️ Screenshot Aplikasi
 
-### 🏠 Halaman Daftar Pemain
+### 🏠 Pada Halaman Daftar Pemain
 
 <img width="1897" height="875" alt="image" src="https://github.com/user-attachments/assets/7d7088ce-18ad-4efc-8df9-8b5f57890b46" />
 
-### ✏️ Halaman Edit Pemain
+### ✏️ Pada Halaman Edit Pemain
 
 <img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/90f0e94a-9fab-45cc-a839-d86ca1bde085" />
 
 ---
 
-## 👩‍💻 Pengembang
+## 👩‍💻 Pembuat
 
-**Nama:** Rusdiana Nana
+**Nama:** Rusdiana 
 **NIM:** 2409106021
 **Kelas:** Pemrograman Web A24
 
