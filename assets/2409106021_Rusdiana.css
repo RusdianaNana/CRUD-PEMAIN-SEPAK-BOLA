@@ -1,0 +1,232 @@
+/* 🎨 Tema Biru Merah 3D - CRUD Rusdiana */
+
+/* Reset dan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b1e64, #a50044);
+    color: #fff;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #004aad, #c2002f);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Tombol */
+a, button {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(145deg, #004aad, #007bff);
+}
+
+.btn-success {
+    background: linear-gradient(145deg, #006400, #28a745);
+}
+
+.btn-danger {
+    background: linear-gradient(145deg, #8b0000, #dc3545);
+}
+
+a:hover, button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* Form */
+form {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 420px;
+    margin: 0 auto 25px auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 15px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(145deg, #004aad, #007bff);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+th {
+    background: linear-gradient(90deg, #004aad, #c2002f);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Search Box */
+.search-box input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-right: 8px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+/* Pagination */
+.pagination a {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background: linear-gradient(145deg, #004aad, #c2002f);
+}
+
+.pagination a:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    margin-top: 40px;
+}
+
+/* ===== Barça Moving Flag Background (no image) ===== */
+:root {
+  --barca-blue: #0b1e64;
+  --barca-maroon: #a50044;
+}
+
+/* layer garis biru-merah geser horizontal */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--barca-blue) 0 140px,
+        var(--barca-maroon) 140px 280px
+    );
+    background-size: 560px 100%;
+    animation: flag-slide 18s linear infinite;
+    filter: saturate(1.1) brightness(0.9);
+}
+
+/* layer “ombak” tipis biar berasa berkibar (wave) */
+body::after {
+    content: "";
+    position: fixed;
+    inset: -2%;
+    z-index: -1;
+    background:
+      radial-gradient(1200px 300px at -10% 20%, rgba(255,255,255,0.08), transparent 60%),
+      radial-gradient(1000px 260px at 110% 70%, rgba(0,0,0,0.15), transparent 60%);
+    mix-blend-mode: soft-light;
+    animation: flag-wave 4.5s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+/* keyframes */
+@keyframes flag-slide {
+    0%   { background-position: 0 0; }
+    100% { background-position: 560px 0; }
+}
+@keyframes flag-wave {
+    0% {
+        transform: perspective(900px) rotateX(0.8deg) skewY(0.4deg) translateX(0);
+        filter: blur(0.2px);
+    }
+    100% {
+        transform: perspective(900px) rotateX(-0.8deg) skewY(-0.4deg) translateX(-8px);
+        filter: blur(0.4px);
+    }
+}
+
+/* opsional: darken konten supaya kontras di atas background bergerak */
+main, table, form, .card, header {
+    background-color: rgba(0,0,0,0.12);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
+/* aksesibilitas: kalau user minta reduce motion, matikan animasi */
+@media (prefers-reduced-motion: reduce) {
+    body::before, body::after { animation: none; }
+}
+
